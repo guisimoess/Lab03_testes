@@ -1,5 +1,5 @@
 package com.bmcl.numbers;
-
+import static org.mockito.Mockito.*;
 import com.sun.tools.javac.jvm.Gen;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
