@@ -1,5 +1,6 @@
 package com.bmcl.numbers;
 
+import com.sun.tools.javac.jvm.Gen;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -46,9 +47,52 @@ public class ListAggregatorTest {
     @Test
     public void distinct() {
 
+        class StubListDeduplicator implements GenericListDeduplicator {
+            @Override public List<Integer> deduplicate(List<Integer>list){
+                return Arrays.asList(1,2,4,5);
+
+            }
+
+        }
+
         ListAggregator aggregator = new ListAggregator();
-        int distinct = aggregator.distinct(list);
+        StubListDeduplicator deduplicator = new StubListDeduplicator();
+        int distinct = aggregator.distinct(list, deduplicator);
+
 
         Assertions.assertEquals(4, distinct);
     }
-}
+
+    @Test
+    public void max2 (){
+        List<Integer> list2 = Arrays.asList(-1,-4,-5);
+
+        ListAggregator aggregator = new ListAggregator();
+        int max = aggregator.max(list2);
+
+        Assertions.assertEquals(-1, max);
+    }
+
+    @Test
+    public void distinct_Bug_8726(){
+    List<Integer> list = Arrays.asList(1,2,4,2);
+
+
+    class StubListDeduplicator implements GenericListDeduplicator {
+        @Override public List<Integer> deduplicate(List<Integer>list){
+         return Arrays.asList(1,2,4);
+
+        }}
+
+        ListAggregator aggregator = new ListAggregator();
+        StubListDeduplicator deduplicator = new StubListDeduplicator();
+        int distinct = aggregator.distinct(list, deduplicator);
+
+Assertions.assertEquals(3, distinct);    }
+
+
+        //Assertions.assertEquals(3, distinct);
+
+    }
+
+
