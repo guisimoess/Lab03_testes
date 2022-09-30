@@ -1,2 +1,13 @@
-package com.bmcl.numbers;public interface GenericListFilter {
+package com.bmcl.numbers;
+
+import java.util.List;
+
+public interface GenericListFilter {
+
+
+    public  boolean accept (Integer number);
+
+
+
+
 }

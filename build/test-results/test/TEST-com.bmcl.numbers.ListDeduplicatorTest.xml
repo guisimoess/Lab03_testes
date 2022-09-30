@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bmcl.numbers.ListDeduplicatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-30T11:24:31" hostname="PT-3TVQGK3" time="0.021">
+<testsuite name="com.bmcl.numbers.ListDeduplicatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-30T14:20:08" hostname="PT-3TVQGK3" time="0.027">
   <properties/>
-  <testcase name="deduplicateBug()" classname="com.bmcl.numbers.ListDeduplicatorTest" time="0.018"/>
+  <testcase name="deduplicateBug()" classname="com.bmcl.numbers.ListDeduplicatorTest" time="0.024"/>
   <testcase name="deduplicate()" classname="com.bmcl.numbers.ListDeduplicatorTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
