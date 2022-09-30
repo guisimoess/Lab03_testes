@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bmcl.numbers.ListAggregatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-09-30T11:24:30" hostname="PT-3TVQGK3" time="0.717">
+  <properties/>
+  <testcase name="distinct_Bug_8726()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.711"/>
+  <testcase name="max()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.001"/>
+  <testcase name="min()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.001"/>
+  <testcase name="sum()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.001"/>
+  <testcase name="max2()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.0"/>
+  <testcase name="distinct()" classname="com.bmcl.numbers.ListAggregatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
